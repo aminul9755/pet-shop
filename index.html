@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet Shop</title>
-  <!-- Google Fonts -->
+  <!-- Google Fonts 1 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts 2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -29,9 +34,13 @@
     .font-family {
       font-family: "Poppins", sans-serif;
     }
+
+    .poppins-thin {
+      font-family: "Poppins", serif;
+    }
   </style>
 </head>
-<body class="font-family">
+<body class="font-family mb-32">
   <!-- Header Section -->
   <header class="mx-auto md:container my-2">
     <nav>
@@ -60,6 +69,7 @@
               <li><a>Item 3</a></li>
             </ul>
           </div>
+          <img class="h-7 mr-2" src="assets/logo-header.png">
           <a class="text-xl">Browse<span class="text-yellow-400">4</span>Pets</a>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -70,15 +80,83 @@
           </ul>
         </div>
         <div class="navbar-end">
+          <img class="w-8" src="assets/notification.png">
+          <img class="w-8 mx-2.5" src="assets/search.png">
           <a class="btn bg-inherit border-yellow-500 w-28">Login</a>
-          <a class="btn ml-3 btn btn-warning">Register</a>
+          <a class="btn ml-3 btn bg-yellow-300">Register</a>
         </div>
       </div>
     </nav>
+    <marquee class="text-amber-600 font-bold mt-4">If you are a cat lover then you are in the right place! </marquee>
+    <div class="mt-8 relative">
+      <div class="absolute bottom-[280px]">
+        <h1 class="text-3xl font-bold leading-normal">Pamper Your Pet, <br> Because They Deserve <br>the Bes</h1>
+        <p class="text-sm mt-4 mb-4">We have a lots of types of cats for your cohice. Come and choose<br>what ever you want. You will see here a world of cats discovery!</p>
+        <button class="btn bg-yellow-300">Find a pet</button>
+      </div>
+      <div>
+        <img class="w-full h-50" src="assets/cat-big.png">
+      </div>
+    </div>
   </header>
 
   <!-- Main Section -->
    <main>
+    <div class="mx-auto md:container my-2">
+      <h2 class="mt-24 text-2xl font-bold">
+        Browse By Categories
+      </h2>
+
+      <div class="flex gap-5 w-full mt-8">
+        <div class="bg-yellow-200 w-1/6 h-48 rounded-lg overflow-x-auto    flex justify-center items-center flex-col">
+          <div class="w-20 h-20 bg-white flex justify-center items-center rounded-full mb-2">
+            <img class="h-8" src="assets/dog-cartoon.png">
+          </div>
+         <h4 class="font-bold mb-2">Dog</h4>
+         <p class="text-sm">3 items</p>
+        </div>
+
+        <div class="bg-yellow-200 w-1/6 h-48 rounded-lg overflow-x-auto flex justify-center items-center flex-col">
+          <div class="w-20 h-20 bg-white flex justify-center items-center rounded-full mb-2">
+            <img class="h-8" src="assets/fish-cartoon.png">
+          </div>
+          <h4 class="font-bold mb-2">Fish</h4>
+          <p class="text-sm">3 items</p>
+        </div>
+
+        <div class="bg-yellow-200 w-1/6 h-48 rounded-lg overflow-x-auto flex justify-center items-center flex-col">
+          <div class="w-20 h-20 bg-white flex justify-center items-center rounded-full mb-2">
+            <img class="h-8" src="assets/cat-cartoon.png">
+          </div>
+          <h4 class="font-bold mb-2">Cat</h4>
+          <p class="text-sm">3 items</p>
+        </div>
+
+        <div class="bg-yellow-200 w-1/6 h-48 rounded-lg overflow-x-auto flex justify-center items-center flex-col">
+          <div class="w-20 h-20 bg-white flex justify-center items-center rounded-full mb-2">
+            <img class="h-8" src="assets/bird-cartoon.png">
+          </div>
+          <h4 class="font-bold mb-2">Birds</h4>
+          <p class="text-sm">3 items</p>
+        </div>
+
+        <div class="bg-yellow-200 w-1/6 h-48 rounded-lg overflow-x-auto flex justify-center items-center flex-col">
+          <div class="w-20 h-20 bg-white flex justify-center items-center rounded-full mb-2">
+            <img class="h-8" src="assets/mouse-cartoon.png">
+          </div>
+          <h4 class="font-bold mb-2">Small pet</h4>
+          <p class="text-sm">3 items</p>
+        </div>
+
+        <div class="bg-yellow-200 w-1/6 h-48 rounded-lg overflow-x-auto flex justify-center items-center flex-col">
+          <div class="w-20 h-20 bg-white flex justify-center items-center rounded-full mb-2">
+            <img class="h-8" src="assets/rabbit-cartoon.png">
+          </div>
+          <h4 class="font-bold mb-2">Rabit</h4>
+          <p class="text-sm">3 items</p>
+        </div>
+      </div>
+    </div>
 
    </main>
 
@@ -88,5 +166,14 @@
 
    </footer>
   
+
+   <script>
+    window.addEventListener('load', function() {
+      // Ensure the page has fully loaded and scrolled to the bottom
+      setTimeout(function() {
+        window.scrollTo(0, document.body.scrollHeight);
+      }, 500);  // Wait for 500ms to ensure content is fully loaded
+    });
+  </script>
 </body>
 </html>
